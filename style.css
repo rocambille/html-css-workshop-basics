@@ -59,7 +59,7 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 10vw, 3rem);
 }
 
 /* section */
@@ -92,4 +92,20 @@ section > article {
 footer {
   padding: 1rem;
   background-color: #f76c6c;
+}
+
+@media screen and (min-width: 768px) {
+  nav > ul {
+    flex-direction: row;
+  }
+
+  .featured-posts {
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .first-article {
+    grid-column: 1 / span 1;
+    grid-row: 2 / -1;
+  }
 }
