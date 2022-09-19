@@ -53,10 +53,13 @@ header {
   background-position: top;
   color: #fff;
   padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* section */
